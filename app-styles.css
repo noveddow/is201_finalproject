@@ -1,0 +1,237 @@
+/* App Page Styles - Sports Theme */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #dc2626 100%);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar a.active {
+    background-color: #059669;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fbbf24;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 8px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: #059669;
+    border-color: #059669;
+    color: white;
+    box-shadow: 0 0 10px rgba(5, 150, 105, 0.5);
+}
+
+.present {
+    background-color: #d97706;
+    border-color: #d97706;
+    color: white;
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.5);
+}
+
+.absent {
+    background-color: #6b7280;
+    border-color: #6b7280;
+    color: white;
+}
+
+input {
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1e3a8a;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    border-color: #059669;
+    box-shadow: 0 0 10px rgba(5, 150, 105, 0.5);
+}
+
+button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #047857;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
+}
+
+#playAgainBtn {
+    display: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#playAgainBtn:hover {
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    max-width: 680px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.key {
+    width: 42px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-weight: 700;
+    cursor: default;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    transform: translateY(-1px);
+}
+
+.key.correct {
+    background-color: #059669;
+    border-color: #059669;
+    box-shadow: 0 0 10px rgba(5, 150, 105, 0.4);
+}
+
+.key.present {
+    background-color: #d97706;
+    border-color: #d97706;
+    box-shadow: 0 0 10px rgba(217, 119, 6, 0.4);
+}
+
+.key.absent {
+    background-color: #6b7280;
+    border-color: #6b7280;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #board {
+        grid-template-columns: repeat(5, 50px);
+        gap: 5px;
+    }
+    
+    .tile {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    input {
+        width: 150px;
+    }
+}

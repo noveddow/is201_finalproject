@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>NBA Page</title>
+    <link rel="stylesheet" href="scratch-styles.css">
+</head>
+
+<body>
+
+<header style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #1e3a8a; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+    <nav style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <a href="index.html" style="color: #1e3a8a; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Home</a>
+        <a href="resume.html" style="color: #1e3a8a; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">Resume</a>
+        <a href="scratch.html" style="color: #1e3a8a; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 5px; background-color: #3b82f6; color: white;">Scratch</a>
+        <a href="app.html" style="color: #1e3a8a; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s ease;">App</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>The Stat Sheet</h1>
+
+    <!-- On-page anchor link -->
+    <a href="#video" class="jump-link">Jump to Highlight Video</a>
+
+    <!-- DIV 1 -->
+    <div class="section">
+        <h2>Leading Scorers (PPG)</h2>
+
+        <!-- Nested list -->
+        <ol>
+            <li>Western Conference
+                <ul>
+                    <li>Luka Dončić</li>
+                    <li>Shai Gilgeous-Alexander</li>
+                    <li>Anthony Edwards</li>
+                </ul>
+            </li>
+            <li>Eastern Conference
+                <ul>
+                    <li>Jaylen Brown</li>
+                    <li>Tyrese Maxey</li>
+                    <li>Donovan Mitchell</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <!-- DIV 2 -->
+    <div class="section">
+        <h2>Highest Scoring Big 3</h2>
+
+        <!-- Your own image -->
+        <img src="images/highest-scoring-big-3.jpg" alt="LeBron James, Luka Doncic, and Austin Reaves" width="400">
+    </div>
+
+    <!-- DIV 3 -->
+    <div class="section">
+        <h2 id="video">NBA Highlights</h2>
+
+        <!-- YouTube Embed -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B9pJrkyVmiU?si=fAruTRDzjMMXMgRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Tableau Graph -->
+    <div class="section">
+        <h2>NBA Stats Visualization</h2>
+
+        <div class='tableauPlaceholder' id='viz1776372622703' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAplayerscoringanalysis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAplayerscoringanalysis&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAplayerscoringanalysis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1776372622703');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <!-- Navigation back -->
+    <div class="section">
+        <a href="index.html">Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>
