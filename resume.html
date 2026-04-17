@@ -10,6 +10,27 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .resume-hero {
+                min-height: 55vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .resume-hero-card {
+                display: inline-block;
+                padding: 1rem 1.5rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 0.75rem;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            }
+
+            .resume-hero-card h1,
+            .resume-hero-card p {
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+            }
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -28,10 +49,10 @@
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('images/waterpolo.jpeg')">
-            <div class="text-center my-5">
+        <header class="py-5 bg-image-full resume-hero" style="background-image: url('images/waterpolo.jpeg')">
+            <div class="text-center resume-hero-card">
                 <h1 class="text-white fs-3 fw-bolder">Devon Dow</h1>
-                <p class="text-white-50 mb-0">(123) 456-7891 | resume@gmail.com</p>
+                <p class="text-white mb-0">(951) 545-3682 | noveddow@gmail.com</p>
             </div>
         </header>
         <!-- Content section-->
